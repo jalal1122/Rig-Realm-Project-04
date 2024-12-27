@@ -1,0 +1,66 @@
+:root {
+    --dark-green: #628b48;
+    --light-green: #6ab547;
+    --yellow: #edd83d;
+    --black: #000000;
+    --white: #ffffff;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+    align-items: center;
+    background-color: var(--light-green);
+}
+
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3vw;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.4vw;
+    font-weight: bolder;
+    position: relative;
+    transition: 0.4s;
+    /* overflow: hidden; */
+}
+
+nav > ul > li:hover{
+    transform: translateY(-0.5vw);
+}
+
+nav > ul > li > a:before{
+    content: "";
+    width: 0;
+    height: 0.2vw;
+    position: absolute;
+    bottom: -0.3vw;
+    left: 0;
+    background-color: var(--black);
+}
+
+nav > ul > li > a:hover::before{
+    width: 100%;
+    transition: width 0.4s;
+}
+
+.mycl-nav-logo-div img{
+    width: 7vw;
+}
+
+.mycl-icons-nav svg{
+    margin-right: 0.4vw;
+}
+
