@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', serif;
+    font-family: "Roboto", serif;
 }
 
 :root{
@@ -86,32 +86,249 @@ nav > ul > li > a:hover::before{
     margin-right: 0.4vw;
 }
 
+.mycl-icons-nav svg:hover{
+    transform: translateY(-0.5vw) scale(1.2);
+}
+
+/* main section Css */
+
+main{
+    display: flex;
+    gap: 10vw;
+    padding: 2vw;
+}
+
 /* Product Section Css */
 
 .mycl-product-section{
-    width: 60vw;
+    width: 65vw;
     display: flex;
-    /* align-items: center; */
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3vw;
+    margin-top: 5vw;
 }
 
 .mycl-product-section > h1{
     color: var(--black);
     font-size: 3.4vw;
-    /* align-self: center; */
+    align-self: center;
+    margin: 2vw 0;
+    position: relative;
+}
+
+.mycl-product-section > h1:hover{
+    color: var(--light-green);
+    font-size: 3.7vw;
+    transition: all 0.5s;
+}
+
+.mycl-product-section > h1::before{
+    content: "";
+    width: 0;
+    height: 0.2vw;
+    position: absolute;
+    bottom: 0.2vw;
+    left: 0;
+    background-color: var(--light-green);
+}
+
+.mycl-product-section > h1:hover::before{
+    width: 100%;
+    transition: all 0.4s;
 }
 
 .mycl-products-flex{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5vw;
+    padding: 2vw;
 }
 
 .mycl-product{
     display: flex;
-    width: 15vw;
+    width: 25vw;
+    height: 45vw;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    gap: 2vw;
+}
+
+.mycl-product-img-div{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    position: relative;
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
 
-.mycl-product > img{
-    width: 20vw;
+.mycl-product .mycl-product-img-div  img{
+    width: 25vw;
     height: auto;
+}
+
+.mycl-product-name{
+    height: 3vw;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    align-self: self-start;
+    text-align: justify;
+    color: var(--black);
+    font-size: 1.3vw;
+}
+
+.mycl-product-price{
+    font-size: 1.5;
+    font-weight: bold;
+}
+
+.mycl-tint{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0 ;
+}
+
+.mycl-product-img-div > button{
+    border: none;
+    background-color: var(--light-green);
+    color: #000000;
+    padding: 1vw 2vw;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    position: absolute;
+    bottom: 2vw;
+    left: 40%;
+    font-size: 1.4vw;
+    transform: translateY(7vw);
+    transition: 0.5s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mycl-product-img-div:hover .mycl-product-img-div > a > img{
+    transform: scale(1.2);
+}
+
+.mycl-product-img-div:hover .mycl-product-img-div-button{
+    transform: translateY(-1vw);
+}
+
+.mycl-tint:hover{
+    display: none;
+}
+
+.mycl-product-img-div-button:hover{
+    color: var(--white);
+    transform: scale(1.2);
+}
+
+.mycl-product-img-div-button:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -150%;
+    background-color: var(--black);
+}
+
+
+.mycl-product-img-div-button:hover::before{
+    left: -50%;
+    transition: all 0.4s;
+}
+
+.mycl-product-img-div-button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 250%;
+    background-color: var(--black);
+}
+
+
+.mycl-product-img-div-button:hover::after{
+    left: 50%;
+    transition: all 0.4s;
+}
+
+.mycl-collection-list-section{
+    margin: 5vw 0;
+    width: 20vw;
+    height: 50vw;
+    border: 2px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.mycl-collection-list-section h1{
+    color: var(--black);
+    font-size: 3.4vw;
+    align-self: center;
+    margin: 2vw 0;
+    position: relative;
+}
+
+.mycl-collection-list-section h1:hover{
+    color: var(--dark-green);
+    font-size: 3.7vw;
+    transition: all 0.5s;
+}
+
+.mycl-collection-list-section h1::before{
+    content: "";
+    width: 0;
+    height: 0.2vw;
+    position: absolute;
+    bottom: 0.2vw;
+    left: 0;
+    background-color: var(--light-green);
+}
+
+.mycl-collection-list-section h1:hover::before{
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.mycl-collection-list-section a{
+    text-decoration: none;
+
+}
+
+
+.mycl-collection-list-section a h2{
+    color: var(--dark-green);
+    align-self: center;
+    margin: 2vw 0;
+    position: relative;
+}
+
+.mycl-collection-list-section a h2:hover{
+    color: var(--black);
+    transition: all 0.5s;
+}
+
+.mycl-collection-list-section a h2::before{
+    content: "";
+    width: 0;
+    height: 0.2vw;
+    position: absolute;
+    bottom: 0.2vw;
+    left: 0;
+    background-color: var(--light-green);
+}
+
+.mycl-collection-list-section a h2:hover::before{
+    width: 100%;
+    transition: all 0.4s;
 }

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --dark-green: #628b48;
+    --light-green: #6ab547;
+    --yellow: #edd83d;
+    --black: #000000;
+    --white: #ffffff;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mycl-top-banner{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    padding: 0.6vw;
+    align-items: center;
+}
+
+.mycl-banner-left,.mycl-banner-right{
+    color: var(--white);
+    display: flex;
+    gap: 2vw;
+    font-size: 1.3vw;
+}
+
+.mycl-banner-right > img{
+    width: 3vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+    align-items: center;
+    background-color: var(--light-green);
+    height: 10vw;
+}
+
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3vw;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.4vw;
+    font-weight: bolder;
+    position: relative;
+    transition: 0.4s;
+    /* overflow: hidden; */
+}
+
+nav > ul > li:hover{
+    transform: translateY(-0.5vw);
+}
+
+nav > ul > li > a:before{
+    content: "";
+    width: 0;
+    height: 0.2vw;
+    position: absolute;
+    bottom: -0.3vw;
+    left: 0;
+    background-color: var(--black);
+}
+
+nav > ul > li > a:hover::before{
+    width: 100%;
+    transition: width 0.4s;
+}
+
+.mycl-nav-logo-div img{
+    width: 7vw;
+}
+
+.mycl-icons-nav svg{
+    margin-right: 0.4vw;
+}
+
+.mycl-icons-nav svg:hover{
+    transform: translateY(-0.5vw) scale(1.2);
+}
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+}
+

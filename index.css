@@ -86,3 +86,7 @@ nav > ul > li > a:hover::before{
     margin-right: 0.4vw;
 }
 
+.mycl-icons-nav svg:hover{
+    transform: translateY(-0.5vw) scale(1.2);
+}
+
