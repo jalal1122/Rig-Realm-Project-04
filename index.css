@@ -130,3 +130,152 @@ footer img{
     align-self: center;
 }
 
+.mycl-carousel img{
+    width: 100vw;
+    height: auto;
+}
+
+.mycl-carousel-button{
+    background-color: var(--black);
+}
+
+.mycl-collection{
+    width: 80vw;
+    margin: 5vw auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mycl-catalog-flex{
+    display: flex;
+    width: 75vw;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mycl-catalog-flex-item{
+    width: 22vw;
+    box-shadow:0 0 0.3vw rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.mycl-catalog-flex-item > img{
+    width: 22vw;
+    /* height: fit-content; */
+    aspect-ratio: 1 1;
+}
+
+.mycl-collection > h1{
+    align-self: center;
+    font-size: 4vw;
+    margin: 5vw 0;
+    position: relative;
+    color: var(--black);
+}
+
+.mycl-collection > h1:hover{
+    color: var(--light-green);
+}
+
+.mycl-collection > h1:before{
+    content: "";
+    width: 0;
+    height: 0.2vw;
+    background-color: var(--light-green);
+    position: absolute;
+    bottom: 0.2vw;
+    left: 0;
+}
+
+.mycl-collection > h1:hover::before{
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.mycl-collection h2{
+    color: var(--black);
+    background-color: var(--light-green);
+    font-size: 2.3vw;
+    z-index: 1;
+}
+
+.mycl-h2-div{
+    color: var(--black);
+    background-color: var(--light-green);
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0,0,0,0.3);
+    font-size: 2.3vw;
+    width: 80%;
+    padding: 0.2vw;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: 115%;
+    left: 10%;
+}
+
+.mycl-collection h2{
+    position: relative;
+}
+
+.mycl-collection h2{
+    color: var(--white);
+    /* background-color: var(--black); */
+}
+
+.mycl-catalog-flex-item:hover .mycl-h2-div{
+    bottom: 45%;
+    transition: all 0.4s;
+}
+
+
+.mycl-collection h2:before{
+    content: "";
+    width: 100%;
+    height: 140%;
+    position: absolute;
+    z-index: -1;
+    top: -10%;
+    left: -150%;
+    background-color: var(--black);
+}
+
+
+.mycl-collection h2:hover::before{
+    left: -50%;
+    transition: all 0.4s;
+}
+
+.mycl-collection h2::after{
+    content: "";
+    width: 100%;
+    height: 140%;
+    position: absolute;
+    z-index: -1;
+    top: -20%;
+    left: 250%;
+    background-color: var(--black);
+}
+
+
+.mycl-collection h2:hover::after{
+    left: 50%;
+    transition: all 0.4s;
+}
+
+
+.mycl-tint{
+    display: none;
+}
+
+.mycl-catalog-flex-item:hover .mycl-tint{
+    display: block;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
