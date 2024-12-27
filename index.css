@@ -90,3 +90,42 @@ nav > ul > li > a:hover::before{
     transform: translateY(-0.5vw) scale(1.2);
 }
 
+/* footer Css */
+
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 13vw;
+    background-color: var(--black);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer h1{
+    color: var(--white);
+    font-size: 1.5vw;
+    margin: 1vw;
+}
+
+.mycl-footer-left,.mycl-footer-cneter,.mycl-footer-social-icons{
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{
+    width: 5vw;
+    height: 5vw;
+}
+
+.mycl-footer-social-icons{
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+}
+
+.mycl-footer-bottom{
+    color: white;
+    align-self: center;
+}
