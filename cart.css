@@ -29,6 +29,12 @@ h1:hover {
   transition: 0.4s all;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 h1::before {
   content: "";
   width: 0;

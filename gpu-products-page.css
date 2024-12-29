@@ -1,16 +1,16 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", serif;
-}
-
 :root {
   --dark-green: #628b48;
   --light-green: #6ab547;
   --yellow: #edd83d;
   --black: #000000;
   --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
 
 .mycl-top-banner {
@@ -33,6 +33,12 @@
   width: 3vw;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -41,9 +47,6 @@ nav {
   background-color: var(--light-green);
   height: 10vw;
   font-family: "Roboto", serif;
-  position: sticky;
-  top: 0;
-  left: 0;
 }
 
 nav > ul {
@@ -311,6 +314,7 @@ main {
   align-self: center;
   margin: 2vw 0;
   position: relative;
+  font-size: 1.5vw;
 }
 
 .mycl-collection-list-section a h2:hover {
@@ -373,4 +377,16 @@ footer img {
 .mycl-footer-bottom {
   color: white;
   align-self: center;
+}
+
+.mycl-product-price {
+  font-size: 2vw;
+}
+
+/* CSS Media Query */
+
+@media screen and (max-width: 768px) {
+  .mycl-product {
+    width: 50vw;
+  }
 }
