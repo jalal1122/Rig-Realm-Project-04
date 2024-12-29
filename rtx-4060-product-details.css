@@ -231,4 +231,9 @@ footer img {
   .mycl-carousel {
     width: 80vw;
   }
+
+  .mycl-carousel img {
+    width: 80vw;
+    height: 80vw;
+  }
 }
