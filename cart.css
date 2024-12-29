@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   width: 80vw;
-  margin: 5vw auto;
+  margin: 2vw auto;
 }
 
 .mycl-cart-section > h1 {
@@ -153,4 +153,19 @@ h3 {
   background-color: var(--light-green);
   color: var(--white);
   padding: 1vw;
+}
+
+/* CSS Media Query */
+
+@media screen and (max-width: 480px) {
+  .mycl-cart-section {
+    /* margin: auto; */
+    margin: 3vw 0;
+  }
+
+  .mycl-cart-grid {
+    gap: 1vw;
+    width: 95vw;
+    margin: 3vw 0, 5vw;
+  }
 }

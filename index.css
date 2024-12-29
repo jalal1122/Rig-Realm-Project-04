@@ -152,7 +152,7 @@ footer img {
 
 .mycl-catalog-flex {
   display: flex;
-  width: 75vw;
+  width: 80vw;
   gap: 5vw;
   flex-wrap: wrap;
   justify-content: center;
@@ -289,4 +289,26 @@ a {
 
 .mycl-collection h2:hover {
   cursor: pointer;
+}
+
+/* CSS Media Query */
+
+@media screen and ((min-width: 481px) and (max-width: 768px)) {
+  .mycl-catalog-flex {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mycl-catalog-flex {
+    width: 70vw;
+  }
+
+  .mycl-catalog-flex-item {
+    width: 35vw;
+  }
+
+  .mycl-catalog-flex-item img {
+    width: 35vw;
+  }
 }
