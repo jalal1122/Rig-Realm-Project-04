@@ -13,8 +13,17 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--light-green);
 }
 
+::-webkit-scrollbar{
+  width: 20px;
+  background-color: var(--background);
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to bottom, #6cff52, #3ec5ff);
+}
 .mycl-top-banner {
   display: flex;
   justify-content: space-between;
@@ -47,7 +56,7 @@ nav {
   padding: 0 5vw;
   align-items: center;
   background-color: var(--light-green);
-  height: 10vw;
+  height: 7vw;
 }
 
 nav > ul {
@@ -87,7 +96,7 @@ nav > ul > li > a:hover::before {
 }
 
 .mycl-nav-logo-div img {
-  width: 7vw;
+  width: 5vw;
 }
 
 .mycl-icons-nav svg {
@@ -318,3 +327,4 @@ a {
     width: 35vw;
   }
 }
+
