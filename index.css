@@ -209,11 +209,13 @@ footer img {
   flex-direction: row;
   gap: 2vw;
   align-items: center;
+  justify-content: center;
 }
 
 .mycl-footer-bottom {
   color: white;
   align-self: center;
+  font-size: 3.5vw;
 }
 
 
@@ -455,6 +457,11 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::select
   box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.3);
 }
 
+.mycl-featured-card:hover{
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+
 .mycl-featured-card img{
   width: 100%;
   height: 100%;
@@ -542,6 +549,22 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::select
   .mycl-nav-logo-div img{
     width: 7vw;
   }
+
+  footer{
+    flex-wrap: wrap;
+  }
+
+  footer h1 {
+    color: var(--white);
+    font-size: 3.5vw;
+    margin: 1vw;
+  }
+
+  footer img {
+    width: 8vw;
+    height: 8vw;
+    margin: 1vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -613,6 +636,27 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::select
   nav svg,nav button svg{
     width: 5vw;
   }
+
+  footer{
+    flex-wrap: wrap;
+  }
+
+  footer h1 {
+    color: var(--white);
+    font-size: 3.5vw;
+    margin: 1vw;
+  }
+
+  footer img {
+    width: 8vw;
+    height: 8vw;
+    margin: 1vw;
+  }
 }
 
+@media screen and (min-width: 1200px)  {
+  .mycl-quality-card{
+    width: 20vw;
+  }
+}
 
