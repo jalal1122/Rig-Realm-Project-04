@@ -6,3 +6,124 @@
   --white: #ffffff;
 }
 
+
+.mycl-contact-container {
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 2vw;
+}
+
+.mycl-contact-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mycl-contact-left h1 {
+  color: var(--black);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.mycl-contact-left p {
+  color: var(--black);
+  font-size: 2rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.mycl-contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.mycl-contact-info-item {
+  color: var(--black);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.mycl-contact-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mycl-form-group {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start; */
+  position: relative;
+  /* width: 50%; */
+}
+
+.mycl-form-group label {
+  color: var(--black);
+  position: absolute;
+  font-size: 1.5rem;
+  left: 1vw;
+  top: 0;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out; 
+}
+
+
+/* Focus effect for input */
+.mycl-form-group input:focus + label {
+  color: var(--highlight-color); /* Replace with focus color */
+  font-size: 1.2rem; /* Shrink the label size */
+  top: -1.5rem; /* Move the label upward */
+}
+
+
+
+.mycl-form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.mycl-form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+ button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ button:hover {
+  background-color: var(--light-green);
+}
+
+
+
+
+
+
+
+
