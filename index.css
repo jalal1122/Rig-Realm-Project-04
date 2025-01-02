@@ -125,12 +125,53 @@ nav > ul > li > a:hover::before {
 }
 
 .mycl-icons-nav svg {
-  margin-right: 0.5vw;
+  margin-right: 0.2vw;
   transition: all 0.4s;
 }
 
 .mycl-icons-nav svg:hover {
   transform: translateY(-0.4vw) scale(1.5);
+}
+
+
+.mycl-icons-nav button{
+  /* background-color: var(--light-green); */
+  border: none;
+  color: #000000;
+}
+
+.mycl-icons-nav button:hover{
+  /* background-color: var(--light-green); */
+  color: #000;
+}
+
+.mycl-icons-nav button:active{
+  /* background-color: var(--light-green); */
+  color: #000;
+}
+
+.mycl-modal{
+  background-color: var(--light-green);
+  color: var(--white);
+}
+
+.modal-footer button{
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: bolder;
+  border: none;
+}
+
+.modal-footer button:hover{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.modal-footer button:active{
+  background-color: var(--black)!important;
+  color: var(--white);
+  transform: scale(0.9);
+  transition: all 0.4s;
 }
 
 /* footer Css */
@@ -340,7 +381,6 @@ a {
 
 .mycl-quality-card{
   width: 28vw;
-  height: 30vw;
 }
 
 .mycl-quality-img-card-div{
@@ -391,46 +431,6 @@ a {
 
 .mycl-featured-header:hover::before {
   width: 100%;
-  transition: all 0.4s;
-}
-
-.mycl-icons-nav button{
-  background-color: var(--light-green);
-  border: none;
-  color: #000000;
-}
-
-.mycl-icons-nav button:hover{
-  background-color: var(--light-green);
-  color: #000;
-}
-
-.mycl-icons-nav button:active{
-  background-color: var(--light-green);
-  color: #000;
-}
-
-.mycl-modal{
-  background-color: var(--light-green);
-  color: var(--white);
-}
-
-.modal-footer button{
-  background-color: var(--black);
-  color: var(--white);
-  font-weight: bolder;
-  border: none;
-}
-
-.modal-footer button:hover{
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.modal-footer button:active{
-  background-color: var(--black)!important;
-  color: var(--white);
-  transform: scale(0.9);
   transition: all 0.4s;
 }
 
@@ -487,21 +487,132 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::select
 
 @media screen and ((min-width: 481px) and (max-width: 768px)) {
   .mycl-catalog-flex {
-    width: 75vw;
+    width: 80vw;
+  }
+
+  .mycl-quality-card{
+    width: 55vw;
+    margin: 2vw 0;
+  }
+
+  .mycl-quality-card h2{
+    color: var(--white);
+    font-size: 4vw;
+  }
+
+  .mycl-quality-card p{
+    color: var(--white);
+    font-size: 3vw;
+  }
+
+  .mycl-quality-img-card-div{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .mycl-quality-img-card-div img{
+    width: 10vw;
+  }
+
+  .mycl-featured-section button{
+    padding: 0.6vw 1vw;
+    font-size: 5vw;
+    font-weight: bold;
+    border-radius: 1vw;
+  }
+
+  .mycl-featured-section >h2{
+    font-size: 6vw;
+  }
+
+  .mycl-featured-header{
+    font-size: 6vw;
+  }
+
+  nav{
+    height: 10vw;
+  }
+
+  nav > ul > li > a{
+    font-size: 3vw;
+  }
+
+  .mycl-nav-logo-div img{
+    width: 7vw;
   }
 }
 
 @media screen and (max-width: 480px) {
   .mycl-catalog-flex {
-    width: 70vw;
+    width: 80vw;
   }
 
   .mycl-catalog-flex-item {
-    width: 35vw;
+    width: 30vw;
   }
 
   .mycl-catalog-flex-item img {
     width: 35vw;
   }
+
+  
+  .mycl-quality-card{
+    width: 55vw;
+  } 
+
+  .mycl-quality-card h2{
+    color: var(--white);
+    font-size: 4vw;
+  }
+
+  .mycl-quality-card p{
+    color: var(--white);
+    font-size: 3vw;
+  }
+
+  .mycl-quality-img-card-div{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .mycl-quality-img-card-div img{
+    width: 10vw;
+  }
+
+  .mycl-featured-section button{
+    padding: 0.6vw 1vw;
+    font-size: 5vw;
+    font-weight: bold;
+    border-radius: 1vw;
+  }
+
+  .mycl-featured-section >h2{
+    font-size: 6vw;
+  }
+
+  .mycl-featured-header{
+    font-size: 6vw;
+  }
+
+  nav{
+    height: 15vw;
+  }
+
+  nav > ul > li > a{
+    font-size: 3vw;
+  }
+
+  .mycl-nav-logo-div img{
+    width: 7vw;
+  }
+
+  nav svg,nav button svg{
+    width: 5vw;
+  }
 }
+
 
