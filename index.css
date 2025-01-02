@@ -14,6 +14,35 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+@keyframes appear {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+body > main > div{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+  transition: all 0.5s;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-green);
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+  border-radius: 30%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--dark-green);
+}
+
 
 .mycl-top-banner {
   display: flex;
@@ -47,7 +76,7 @@ nav {
   padding: 0 5vw;
   align-items: center;
   background-color: var(--light-green);
-  height: 10vw;
+  height: 6vw;
 }
 
 nav > ul {
@@ -87,15 +116,20 @@ nav > ul > li > a:hover::before {
 }
 
 .mycl-nav-logo-div img {
-  width: 7vw;
+  width: 4vw;
+}
+
+.mycl-nav-logo-div img:hover {
+  transform: scale(1.1);
 }
 
 .mycl-icons-nav svg {
-  margin-right: 0.4vw;
+  margin-right: 0.5vw;
+  transition: all 0.4s;
 }
 
 .mycl-icons-nav svg:hover {
-  transform: translateY(-0.5vw) scale(1.2);
+  transform: translateY(-0.4vw) scale(1.5);
 }
 
 /* footer Css */
@@ -140,14 +174,6 @@ footer img {
   align-self: center;
 }
 
-.mycl-carousel img {
-  width: 100vw;
-  height: auto;
-}
-
-.mycl-carousel-button {
-  background-color: var(--black);
-}
 
 .mycl-collection {
   width: 80vw;
@@ -295,6 +321,39 @@ a {
 
 .mycl-collection h2:hover {
   cursor: pointer;
+}
+
+.mycl-quality-flex{
+  gap: 2vw  ;
+}
+
+.mycl-quality-card h2{
+  color: var(--white);
+  font-size: 2vw;
+}
+
+.mycl-quality-card p{
+  color: var(--white);
+  font-size: 1.5vw;
+}
+
+.mycl-quality-card{
+  width: 35vw;
+  height: 35vw;
+}
+
+.mycl-quality-img-card-div{
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.mycl-quality-img-card-div img{
+  width: 5vw;
+}
+
+.mycl-quality-section{
+  background-color: #6ab547;
 }
 
 /* CSS Media Query */

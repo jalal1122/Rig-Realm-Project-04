@@ -114,65 +114,14 @@
       </nav>
     </header>
     <main>
-      <div class="mycl-carousel">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div
-            class="carousel-indicators mycl-carousel-bottom-buttons mycl-carousel-button2"
-          >
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active mycl-carousel-button"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              class="mycl-carousel-button"
-              aria-label="Slide 2"
-            ></button>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Images/home-slideshow-img-1.jpeg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img
-                src="./Images/home-slideshow-img-1.jpeg"
-                class="d-block"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="./Images/home-slideshow-img-2.jpg"
-                class="d-block"
-                alt="..."
-              />
-            </div>
+          <div class="carousel-item">
+            <img src="./Images/home-slideshow-img-2.jpg" class="d-block w-100" alt="...">
           </div>
-          <button
-            class="carousel-control-prev mycl-carousel-button"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next mycl-carousel-button"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
       <div class="mycl-collection">
@@ -225,6 +174,36 @@
           </div>
         </div>
       </div>
+
+      <div class="container mycl-quality-section rounded-4">
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center mycl-quality-flex mx-auto flex-wrap">
+            <div class="mycl-quality-card d-flex flex-column justify-content-center align-items-center text-center">
+              <div class="mycl-quality-img-card-div d-flex justify-content-center align-items-center">
+                <img src="./Images/cash-on-delivery-quality-section-img-1.png" alt="" class="img-fluid" />
+              </div>
+              <h2 class="fw-bold">Cash on delivery</h2>
+              <p class="text-center">With our advanced payment module you can select the payment menthod that fits! And always secure!</p>
+            </div>
+            <div class="mycl-quality-card d-flex flex-column justify-content-center align-items-center text-center">
+              <div class="mycl-quality-img-card-div d-flex justify-content-center align-items-center">
+                <img src="./Images/reliable-shipping-quality-section-img-2.png" alt="" class="img-fluid" />
+              </div>
+              <h2 class="fw-bold">Reliable shipping</h2>
+              <p class="text-center">Benefit from our shipping to get your products wherever you need them!</p>
+            </div>
+            <div class="mycl-quality-card d-flex flex-column justify-content-center align-items-center text-center">
+              <div class="mycl-quality-img-card-div d-flex justify-content-center align-items-center">
+                <img src="./Images/security-quality-section-img-3.png" alt="" class="img-fluid" />
+              </div>
+              <h2 class="fw-bold">Security, from start to finish</h2>
+              <p class="text-center">We take security very seriously. This is why we don&rsquo;t store your data and encrypt all transactions.</p>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      
     </main>
     <footer>
       <div class="mycl-footer-left">
