@@ -14,9 +14,10 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-@keyframes appear {
+
+/* @keyframes appear {
   from {
-    transform: scale(0.5);
+    transform: scale(0.8);
   }
   to {
     transform: scale(1);
@@ -28,7 +29,7 @@ body > main > div{
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
   transition: all 0.5s;
-}
+} */
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--light-green);
@@ -338,8 +339,8 @@ a {
 }
 
 .mycl-quality-card{
-  width: 35vw;
-  height: 35vw;
+  width: 28vw;
+  height: 30vw;
 }
 
 .mycl-quality-img-card-div{
@@ -354,6 +355,132 @@ a {
 
 .mycl-quality-section{
   background-color: #6ab547;
+}
+
+.mycl-featured-header{
+  color: var(--black);
+  font-size: 4vw;
+  font-weight: bolder;
+  margin: 3vw 0;
+  padding: 2vw;
+  position: relative;
+  background-color: var(--light-green);
+}
+
+.mycl-featured-header {
+  align-self: center;
+  font-size: 4vw;
+  margin: 1vw 0;
+  position: relative;
+  color: var(--black);
+}
+
+.mycl-featured-header:hover {
+  color: var(--white);
+}
+
+.mycl-featured-header:before {
+  content: "";
+  width: 0;
+  height: 0.2vw;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 0.7vw;
+  left: 0;
+}
+
+.mycl-featured-header:hover::before {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.mycl-icons-nav button{
+  background-color: var(--light-green);
+  border: none;
+  color: #000000;
+}
+
+.mycl-icons-nav button:hover{
+  background-color: var(--light-green);
+  color: #000;
+}
+
+.mycl-icons-nav button:active{
+  background-color: var(--light-green);
+  color: #000;
+}
+
+.mycl-modal{
+  background-color: var(--light-green);
+  color: var(--white);
+}
+
+.modal-footer button{
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: bolder;
+  border: none;
+}
+
+.modal-footer button:hover{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.modal-footer button:active{
+  background-color: var(--black)!important;
+  color: var(--white);
+  transform: scale(0.9);
+  transition: all 0.4s;
+}
+
+.mycl-featured-section >h2{
+  color: var(--light-green);
+  background-color: black;
+  padding: 2vw;
+  font-weight: bolder;
+  font-size: 3vw;
+  margin: 2vw 0;
+}
+
+h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::selection,p::selection,button::selection,a::selection{
+  color: var(--white);
+  background-color: var(--light-green);
+}
+
+.mycl-featured-card{
+  margin: 2vw 0;
+  padding: 0.2vw;
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.3);
+}
+
+.mycl-featured-card img{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 1;
+}
+
+.mycl-featured-section button{
+  background-color: var(--light-green);
+  color: var(--black);
+  padding: 0.6vw 1vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  border: none;
+  border-radius: 1vw;
+  cursor: pointer;
+}
+
+.mycl-featured-section button:hover{  
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.mycl-featured-section button:active{
+  transform: scale(0.9);
+  background-color: black !important;
+  color: var(--white);
 }
 
 /* CSS Media Query */
