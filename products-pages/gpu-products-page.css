@@ -13,90 +13,6 @@
   font-family: "Roboto", serif;
 }
 
-.mycl-top-banner {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--black);
-  padding: 0.6vw;
-  align-items: center;
-}
-
-.mycl-banner-left,
-.mycl-banner-right {
-  color: var(--white);
-  display: flex;
-  gap: 2vw;
-  font-size: 1.3vw;
-}
-
-.mycl-banner-right > img {
-  width: 3vw;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 5vw;
-  align-items: center;
-  background-color: var(--light-green);
-  height: 10vw;
-  font-family: "Roboto", serif;
-}
-
-nav > ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 3vw;
-}
-
-nav > ul > li > a {
-  text-decoration: none;
-  color: var(--black);
-  font-size: 1.4vw;
-  font-weight: bolder;
-  position: relative;
-  transition: 0.4s;
-  /* overflow: hidden; */
-}
-
-nav > ul > li:hover {
-  transform: translateY(-0.5vw);
-}
-
-nav > ul > li > a:before {
-  content: "";
-  width: 0;
-  height: 0.2vw;
-  position: absolute;
-  bottom: -0.3vw;
-  left: 0;
-  background-color: var(--black);
-}
-
-nav > ul > li > a:hover::before {
-  width: 100%;
-  transition: width 0.4s;
-}
-
-.mycl-nav-logo-div img {
-  width: 7vw;
-}
-
-.mycl-icons-nav svg {
-  margin-right: 0.4vw;
-}
-
-.mycl-icons-nav svg:hover {
-  transform: translateY(-0.5vw) scale(1.2);
-}
-
 /* main section Css */
 
 main {
@@ -216,6 +132,7 @@ main {
   overflow: hidden;
 }
 
+
 .mycl-product-img-div:hover a > img {
   transform: scale(1.2);
 }
@@ -268,7 +185,7 @@ main {
 .mycl-collection-list-section {
   margin: 5vw 0;
   width: 20vw;
-  height: 50vw;
+  height: 60vw;
   border: 2px solid var(--black);
   display: flex;
   flex-direction: column;
@@ -335,52 +252,6 @@ main {
 .mycl-collection-list-section a h2:hover::before {
   width: 100%;
   transition: all 0.4s;
-}
-
-/* footer Css */
-
-footer {
-  display: flex;
-  justify-content: center;
-  gap: 13vw;
-  background-color: var(--black);
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer h1 {
-  color: var(--white);
-  font-size: 1.5vw;
-  margin: 1vw;
-}
-
-.mycl-footer-left,
-.mycl-footer-cneter,
-.mycl-footer-social-icons {
-  display: flex;
-  flex-direction: column;
-}
-
-footer img {
-  width: 5vw;
-  height: 5vw;
-}
-
-.mycl-footer-social-icons {
-  flex-direction: row;
-  gap: 2vw;
-  align-items: center;
-}
-
-.mycl-footer-bottom {
-  color: white;
-  align-self: center;
-}
-
-.mycl-product-price {
-  font-size: 2vw;
 }
 
 /* CSS Media Query */

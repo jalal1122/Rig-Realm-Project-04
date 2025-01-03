@@ -44,84 +44,211 @@
       </div>
       <nav>
         <div class="mycl-nav-logo-div">
-          <img src="./Images/Rig Realm Logo.png" alt="" />
+          <a href="#index.html">
+            <img src="./Images/Rig Realm Logo.png" alt="" />
+          </a>
         </div>
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./catalog.html">Catalog</a></li>
-          <li><a href="./cart.html">Cart</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
         <div class="mycl-icons-nav">
-          <svg
-            focusable="false"
-            width="18"
-            height="18"
-            class="icon icon--header-search"
-            viewBox="0 0 18 18"
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#searchmodal"
           >
-            <path
-              d="M12.336 12.336c2.634-2.635 2.682-6.859.106-9.435-2.576-2.576-6.8-2.528-9.435.106C.373 5.642.325 9.866 2.901 12.442c2.576 2.576 6.8 2.528 9.435-.106zm0 0L17 17"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            ></path>
-          </svg>
-          <svg
-            focusable="false"
-            width="18"
-            height="17"
-            class="icon icon--header-customer"
-            viewBox="0 0 18 17"
+            <svg
+              focusable="false"
+              width="18"
+              height="18"
+              class="icon icon--header-search"
+              viewBox="0 0 18 18"
+            >
+              <path
+                d="M12.336 12.336c2.634-2.635 2.682-6.859.106-9.435-2.576-2.576-6.8-2.528-9.435.106C.373 5.642.325 9.866 2.901 12.442c2.576 2.576 6.8 2.528 9.435-.106zm0 0L17 17"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#loginhmodal"
           >
-            <circle
-              cx="9"
-              cy="5"
-              r="4"
+            <svg
+              focusable="false"
+              width="18"
+              height="17"
+              class="icon icon--header-customer"
+              viewBox="0 0 18 17"
+            >
+              <circle
+                cx="9"
+                cy="5"
+                r="4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linejoin="round"
+              ></circle>
+              <path
+                d="M1 17v0a4 4 0 014-4h8a4 4 0 014 4v0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+          <a href="./cart.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#000000"
               fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linejoin="round"
-            ></circle>
-            <path
-              d="M1 17v0a4 4 0 014-4h8a4 4 0 014 4v0"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            ></path>
-          </svg>
-          <svg
-            focusable="false"
-            width="20"
-            height="18"
-            class="icon icon--header-cart"
-            viewBox="0 0 20 18"
-          >
-            <path
-              d="M3 1h14l1 16H2L3 1z"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            ></path>
-            <path
-              d="M7 4v0a3 3 0 003 3v0a3 3 0 003-3v0"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            ></path>
-          </svg>
+            >
+              <path
+                d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle
+                cx="10.5"
+                cy="20.5"
+                r="1.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <circle
+                cx="17.5"
+                cy="20.5"
+                r="1.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </svg>
+          </a>
         </div>
       </nav>
     </header>
+
+    <!-- SEarch  Modal -->
+    <div
+      class="modal fade"
+      id="searchmodal"
+      tabindex="-1"
+      aria-labelledby="searchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content mycl-modal">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="searchModalLabel">Search</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="button-addon5"
+            />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LOGIN Modal -->
+    <div
+      class="modal fade"
+      id="loginhmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content mycl-modal">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="button-addon5"
+            />
+            <input
+              type="password"
+              class="form-control mt-2"
+              placeholder="Password"
+              aria-label="Password"
+              aria-describedby="button-addon5"
+            />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">
+              Login
+            </button>
+            <button type="button" class="btn">Signup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main from here -->
     <main>
+      <img src="./Images/catalog-page-img-1.png" alt="" class="w-100" />
       <div class="mycl-collection">
         <h1>CATALOG</h1>
         <div class="mycl-catalog-flex">
           <div class="mycl-catalog-flex-item">
-            <img src="./Images/Zotac GamingGeForce RTX/GPU 1/zotac-main-img.png" alt="" />
+            <img
+              src="./Images/Zotac GamingGeForce RTX/GPU 1/zotac-main-img.png"
+              alt=""
+            />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./gpu-products-page.html">
+              <a href="./products-pages/gpu-products-page.html">
                 <h2>Graphics Card Collections</h2>
               </a>
             </div>
@@ -130,16 +257,19 @@
             <img src="./Images/home-page-card-img-2.jpg" alt="" />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./CPU-RGB-Cases Product.html">
+              <a href="./products-pages/cpu-cases-products-page.html">
                 <h2>CPU Cases Collections</h2>
               </a>
             </div>
           </div>
           <div class="mycl-catalog-flex-item">
-            <img src="./Images/RGB RAM's/Gigabyte AORUS/41znJt7UidL._AC_.jpg" alt="" />
+            <img
+              src="./Images/RGB RAM's/Gigabyte AORUS/41znJt7UidL._AC_.jpg"
+              alt=""
+            />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./rgb-ram-product.html">
+              <a href="./products-pages/ram-products-page.html">
                 <h2>RGB Ram Collections</h2>
               </a>
             </div>
@@ -148,17 +278,29 @@
             <img src="./Images/Gaming LCD's/Gaming LCD 2/Main.jpg" alt="" />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./gaming-monitor-product.html">
+              <a href="./products-pages/monitors-products-page.html">
                 <h2>Gaming Monitor Collections</h2>
               </a>
             </div>
           </div>
           <div class="mycl-catalog-flex-item">
-            <img src="./Images/Blue Finger Rgb/bluefinger-main-img.png" alt="" />
+            <img src="./Images/home-page-card-img-2.jpg" alt="" />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./mouse-keyboard-page.html">
-                <h2>Mouse and Keyboard Collections</h2>
+              <a href="./products-pages/keyboards-products-page.html">
+                <h2>Keyboard Collections</h2>
+              </a>
+            </div>
+          </div>
+          <div class="mycl-catalog-flex-item">
+            <img
+              src="./Images/Blue Finger Rgb/bluefinger-main-img.png"
+              alt=""
+            />
+            <div class="mycl-tint"></div>
+            <div class="mycl-h2-div">
+              <a href="./products-pages/headphones-products-page.html">
+                <h2>Headphones Collections</h2>
               </a>
             </div>
           </div>
@@ -169,16 +311,16 @@
       <div class="mycl-footer-left">
         <h1>Navigation</h1>
         <a href="./index.html"><h1>Home</h1></a>
-        <a href="./gpu-products-page.html"><h1>Catalog</h1></a>
+        <a href="./products-pages/gpu-products-page.html"><h1>Catalog</h1></a>
         <a href="./cart.html"><h1>Cart</h1></a>
         <a href="./contact.html"><h1>Contact</h1></a>
       </div>
       <div class="mycl-footer-cneter">
-        <a href="./gpu-products-page.html"><h1>Graphics Cards</h1></a>
-        <a href="./gaming-monitor-product.html"><h1>Gaming Monitors</h1></a>
-        <a href="./mouse-keyboard-page.html"><h1>Mouse and Keyboard</h1></a>
-        <a href="./rgb-ram-product.html"><h1>Rgb Ram</h1></a>
-        <a href="./CPU-RGB-Cases Product.html"><h1>Cpu Rgb Cases</h1></a>
+        <a href="./products-pages/gpu-products-page.html"><h1>Graphics Cards</h1></a>
+        <a href="./products-pages/monitors-products-page.html"><h1>Gaming Monitors</h1></a>
+        <a href="./products-pages/keyboards-products-page.html"><h1>Keyboards</h1></a>
+        <a href="./products-pages/ram-products-page.html"><h1>Rgb Ram</h1></a>
+        <a href="./products-pages/cpu-cases-products-page.html Product.html"><h1>Cpu Rgb Cases</h1></a>
       </div>
       <div class="mycl-footer-social-icons">
         <a href="https:/www.github.com/jalal1122" target="_blank">
