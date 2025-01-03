@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --dark-green: #628b48;
+  --light-green: #6ab547;
+  --yellow: #edd83d;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mycl-top-side{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mycl-carousel {
+  width: 50vw;
+  /* overflow: hidden; */
+  margin: 5vw;
+  align-self: center;
+  border-radius: 2vw;
+}
+
+.mycl-carousel img {
+  width: 40vw;
+  height: 40vw;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 2vw;
+}
+
+.mycl-carousel img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.mycl-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.mycl-carousel:hover span {
+  background-color: #000000;
+  color: black;
+}
+
+.mycl-left-side button{
+  background-color: var(--light-green);
+  font-weight: bold;
+  margin: 1vw;
+}
+
+.mycl-left-side button:hover{
+  background-color: var(--black);
+  color: white;
+}
+
+.mycl-left-side button:active{
+  transform: scale(0.9);
+}
+
+.mycl-product {
+  width: 92vw;
+  margin: 5vw auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mycl-product-details-flex {
+  display: flex;
+  /* gap: 2vw; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mycl-tdrow {
+  margin-right: 1vw;
+  padding: 1vw;
+  font-weight: bold;
+}
+
+.mycl-product-details h3 {
+  font-weight: 900;
+  color: var(--light-green);
+  position: relative;
+  display: inline;
+}
+
+.mycl-product-details h3:hover {
+  color: var(--black);
+}
+
+.mycl-product-details h3:before {
+  content: "";
+  width: 0;
+  height: 0.2vw;
+  position: absolute;
+  bottom: 0.2vw;
+  left: 0;
+  background-color: var(--black);
+}
+
+.mycl-product-details h3:hover::before {
+  width: 100%;
+}
+
+/* CSS Media Query */
+
+@media screen and (max-width: 768px) {
+  .mycl-product-details-flex {
+    flex-direction: column;
+  }
+
+  .mycl-top-side{
+    flex-direction: column;
+  }
+
+  .mycl-carousel {
+    width: 80vw;
+  }
+
+  .mycl-carousel img {
+    width: 80vw;
+    height: 80vw;
+  }
+}
