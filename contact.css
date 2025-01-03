@@ -14,7 +14,10 @@
   align-items: center;
   height: 100vh;
   margin: 2vw;
+  padding: 2vw;
 }
+
+
 
 .mycl-contact-left{
   width: 50%;
@@ -24,17 +27,21 @@
   align-items: center;
 }
 
+
 .mycl-contact-left h1 {
   color: var(--black);
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
+  font-size: 4vw;
+  margin-left: 25vw;
 }
 
 .mycl-contact-left p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--black);
-  font-size: 2rem;
-  margin-left: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2vw;
+  margin-left: 3vw;
+  margin-top: 2vw;
 }
 
 .mycl-contact-info {
@@ -42,14 +49,16 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: start;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .mycl-contact-info-item {
   color: var(--black);
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.5vw;
+  margin-left: 1vw;
+  padding: 1vw;
 }
+
 
 
 .mycl-contact-right {
@@ -72,7 +81,7 @@
 .mycl-form-group label {
   color: var(--black);
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   left: 1vw;
   top: 0;
   margin-bottom: 0.5rem;
@@ -90,17 +99,17 @@
 
 
 .mycl-form-group input {
-  width: 100%;
-  padding: 0.5rem;
+  width: 30vw;
+  padding: 0.5vw;
   font-size: 1.5rem;
   border: 1px solid var(--black);
   border-radius: 5px;
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 
 .mycl-form-group textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5vw;
   font-size: 1.5rem;
   border: 1px solid var(--black);
   border-radius: 5px;
@@ -108,16 +117,74 @@
 }
 
  button {
-  padding: 0.5rem 1rem;
+  padding: 0.5vw 1vw;
   font-size: 1.5rem;
-  background-color: var(--yellow);
+  background-color: var(--black);
+  color: var(--white);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
  button:hover {
-  background-color: var(--light-green);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .mycl-contact-left,
+  .mycl-contact-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .mycl-contact-left h1 {
+    font-size: 6vw;
+    margin-left: 0;
+  }
+
+  .mycl-contact-left p {
+    font-size: 4vw;
+    margin-left: 0;
+    margin-top: 2vw;
+  }
+
+  .mycl-form-group input {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* Extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .mycl-contact-container {
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .mycl-contact-left h1 {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .mycl-contact-left p {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .mycl-form-group input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
 }
 
 
