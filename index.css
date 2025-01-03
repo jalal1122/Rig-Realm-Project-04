@@ -65,6 +65,11 @@ body > main > div{
   width: 3vw;
 }
 
+.mycl-top-banner a{
+  text-decoration: none;
+  color: white;
+}
+
 header {
   position: sticky;
   top: 0;
