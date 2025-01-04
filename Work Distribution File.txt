@@ -1,0 +1,24 @@
+github repository link : https://github.com/jalal1122/Rig-Realm-Project-04
+
+First of all clone the github repository in your computer then open vs code in the project folder.
+
+There is 6 types of collection
+
+I have created one product detail page what you have to do is create a html file (named the same as product) in the products details folder and copy the html code from the asus rog strix rtx 4060 8gb html file and just change the value in the html with another products.
+
+
+Anas Work :   6 gpu product details pages 
+
+Maaz Work : 2 gpu product details pages and 4 cpu cases product details pages
+
+Muhammad Usman Work : 4 cpu cases product details pages and 2 monitors product details pages
+
+Areeb Ali Work : 6 monitors product details pages
+
+Kavish Iqbal Work : 6 ram product details pages
+
+Muhammad Waqas Work : 2 ram product details pages and 4 keyboard product details pages
+
+Sadiq Rehman Work : 4 Keyboard product details pages and 2 headphones product details pages
+
+Siyad Roghani Work : 6 headphones product details pages
