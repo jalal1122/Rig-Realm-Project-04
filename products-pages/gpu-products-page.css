@@ -92,7 +92,7 @@ main {
 }
 
 .mycl-product-name {
-  height: 3vw;
+  height: 4vw;
   text-overflow: ellipsis;
   overflow: hidden;
   align-self: self-start;
