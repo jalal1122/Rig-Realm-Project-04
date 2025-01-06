@@ -540,6 +540,12 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::select
   transition: all 0.4s;
 }
 
+.mycl-featured-card-text h2{
+  height: 6vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .mycl-featured-card img{
   width: 100%;
   height: 100%;
