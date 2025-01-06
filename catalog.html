@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
     <header>
       <div class="mycl-top-banner">
         <div class="mycl-banner-left">
@@ -343,5 +346,24 @@
         <div>Rig Realm &copy; 2024</div>
       </div>
     </footer>
+    <div class="mycl-top-banner">
+      <div class="mycl-banner-left">
+        <span>rigrealm@edu.com</span>
+        <span
+          >Peshawar, Khyber Pakhtunkhwa, Agriculture University Peshawar</span
+        >
+      </div>
+      <div class="mycl-banner-right">
+        <img src="./Images/github-icon3.png" alt="" />
+        <img src="./Images/linkedin-icon2.png" alt="" />
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("preloader").style.display = "none";
+        }, 2000); // Adjust the time (in milliseconds) for a longer delay
+      });
+    </script>
   </body>
 </html>

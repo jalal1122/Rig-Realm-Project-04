@@ -185,6 +185,10 @@ nav > ul > li > a:before {
   background-color: var(--black);
 }
 
+.carousel-inner img{
+  width: 100vw;
+}
+
 nav > ul > li > a:hover::before {
   width: 100%;
   transition: width 0.4s;
