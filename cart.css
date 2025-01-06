@@ -89,10 +89,20 @@
   color: #6ab547;
 }
 
+.mycl-ari i:hover{
+  cursor: pointer;
+  color: #000000;
+}
+
 .mycl-ari-row button{
   background-color: var(--light-green);
   font-weight: bold;
   margin: 1vw;
+}
+
+.mycl-ari-row button:hover{
+  background-color: var(--black);
+  color: white;
 }
 
 .mycl-sub-total{
@@ -105,4 +115,9 @@
   font-weight: bold;
   color: white;
   margin: 1vw;
+}
+
+.mycl-checkout-btn:hover{
+  background-color: white;
+  color: black;
 }
