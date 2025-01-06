@@ -39,7 +39,7 @@
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background: #FF3D00;
+  background: #000;
   animation: loading-bounce 0.5s ease-in-out infinite alternate;
   z-index: 100;
 }
