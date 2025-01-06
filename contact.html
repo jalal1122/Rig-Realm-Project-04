@@ -33,19 +33,11 @@
     <link rel="stylesheet" href="./contact.css">
   </head>
   <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
     <header>
-      <div class="mycl-top-banner">
-        <div class="mycl-banner-left">
-          <span>rigrealm@edu.com</span>
-          <span
-            >Peshawar, Khyber Pakhtunkhwa, Agriculture University Peshawar</span
-          >
-        </div>
-        <div class="mycl-banner-right">
-          <img src="./Images/github-icon3.png" alt="" />
-          <img src="./Images/linkedin-icon2.png" alt="" />
-        </div>
-      </div>
+      
       <nav>
         <div class="mycl-nav-logo-div">
           <a href="#index.html">
@@ -186,6 +178,7 @@
         </div>
         <div class="mycl-contact-right">
           <form action="" method="post">
+            <input type="hidden" name="apikey" value="47866a08-3a45-4d0b-ac82-8730d5d48b5e">
             <div class="mycl-form-group">
               <label for="name">Name</label>
               <input type="text" id="name" required />
@@ -231,5 +224,24 @@
         <div>Rig Realm &copy; 2024</div>
       </div>
     </footer>
+    <div class="mycl-top-banner">
+      <div class="mycl-banner-left">
+        <span>rigrealm@edu.com</span>
+        <span
+          >Peshawar, Khyber Pakhtunkhwa, Agriculture University Peshawar</span
+        >
+      </div>
+      <div class="mycl-banner-right">
+        <img src="./Images/github-icon3.png" alt="" />
+        <img src="./Images/linkedin-icon2.png" alt="" />
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("preloader").style.display = "none";
+        }, 2000); // Adjust the time (in milliseconds) for a longer delay
+      });
+    </script>
   </body>
 </html>

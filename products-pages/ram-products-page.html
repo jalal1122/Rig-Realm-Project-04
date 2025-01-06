@@ -30,25 +30,10 @@
     <link rel="stylesheet" href="./gpu-products-page.css" />
   </head>
   <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
     <header>
-      <div class="mycl-top-banner">
-        <div class="mycl-banner-left">
-          <a href="mailto:jk4350649@gmail.com">
-            <span>rigrealm@edu.com</span>
-          </a>
-          <span
-            >Peshawar, Khyber Pakhtunkhwa, Agriculture University Peshawar</span
-          >
-        </div>
-        <div class="mycl-banner-right">
-          <a href="https://www.github.com/jalal1122/">
-            <img src="../Images/github-icon3.png" alt="" />
-          </a>
-          <a href="https://www.linkedin.com/in/mjdevstudio">
-            <img src="../Images/linkedin-icon2.png" alt="" />
-          </a>
-        </div>
-      </div>
       <nav>
         <div class="mycl-nav-logo-div">
           <a href="#index.html">
@@ -411,5 +396,30 @@
         <div>Rig Realm &copy; 2024</div>
       </div>
     </footer>
+    <div class="mycl-top-banner">
+      <div class="mycl-banner-left">
+        <a href="mailto:jk4350649@gmail.com">
+          <span>rigrealm@edu.com</span>
+        </a>
+        <span
+          >Peshawar, Khyber Pakhtunkhwa, Agriculture University Peshawar</span
+        >
+      </div>
+      <div class="mycl-banner-right">
+        <a href="https://www.github.com/jalal1122/">
+          <img src="../Images/github-icon3.png" alt="" />
+        </a>
+        <a href="https://www.linkedin.com/in/mjdevstudio">
+          <img src="../Images/linkedin-icon2.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("preloader").style.display = "none";
+        }, 2000); // Adjust the time (in milliseconds) for a longer delay
+      });
+    </script>
   </body>
 </html>
