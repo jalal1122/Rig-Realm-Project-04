@@ -541,9 +541,12 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::select
 }
 
 .mycl-featured-card-text h2{
-  height: 6vw;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; /* Limit to 2 lines */
+      line-clamp: 2; /* Limit to 2 lines */
+      overflow: hidden;
+      text-overflow: ellipsis; /* Add ellipsis if text overflows */
 }
 
 .mycl-featured-card img{
