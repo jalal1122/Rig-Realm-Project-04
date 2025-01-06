@@ -138,6 +138,10 @@
     margin: 0;
   }
 
+  .mycl-contact-info-item{
+    font-size: 5vw ;
+  }
+
   .mycl-contact-left h1 {
     font-size: 6vw;
     margin-left: 0;
