@@ -161,13 +161,18 @@ main {
 }
 
 .mycl-product-name {
-  height: 4vw;
   text-overflow: ellipsis;
   overflow: hidden;
   align-self: self-start;
   text-align: justify;
   color: var(--black);
   font-size: 1.3vw;
+  display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; /* Limit to 2 lines */
+      line-clamp: 2; /* Limit to 2 lines */
+      overflow: hidden;
+      text-overflow: ellipsis; /* Add ellipsis if text overflows */
 }
 
 .mycl-product-price {
