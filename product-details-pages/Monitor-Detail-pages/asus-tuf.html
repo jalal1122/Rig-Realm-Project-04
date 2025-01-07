@@ -23,42 +23,28 @@
     />
     <link
       rel="shortcut icon"
-      href="../Images/Rig Realm Logo.png"
+      href="/Images/Rig Realm Logo.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../rtx-4060-product-details.css" />
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
     <header>
-      <div class="mycl-top-banner">
-        <div class="mycl-banner-left">
-          <a href="mailto:jk4350649@gmail.com">
-            <span>rigrealm@edu.com</span>
-          </a>
-          <span
-            >Peshawar, Khyber Pakhtunkhwa, Agriculture University Peshawar</span
-          >
-        </div>
-        <div class="mycl-banner-right">
-          <a href="https://www.github.com/jalal1122/">
-            <img src="../Images/github-icon3.png" alt="" />
-          </a>
-          <a href="https://www.linkedin.com/in/mjdevstudio">
-            <img src="../Images/linkedin-icon2.png" alt="" />
-          </a>
-        </div>
-      </div>
+      
       <nav>
         <div class="mycl-nav-logo-div">
-          <a href="../index.html">
-            <img src="../Images/Rig Realm Logo.png" alt="" />
+          <a href="/index.html">
+            <img src="/Images/Rig Realm Logo.png" alt="" />
           </a>
         </div>
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../catalog.html">Catalog</a></li>
-          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/catalog.html">Catalog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
         <div class="mycl-icons-nav">
           <button
@@ -112,7 +98,7 @@
               ></path>
             </svg>
           </button>
-          <a href="../cart.html">
+          <a href="/cart.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -302,7 +288,7 @@
             <h3>Price: Rs 93,000</h3>
             <a href=""></a>
             <button class="btn">Buy</button>
-            <a href="../cart.html">
+            <a href="/cart.html">
               <button class="btn">Add to cart</button>
             </a>
           </div>
@@ -338,7 +324,7 @@
               <h2>About this item</h2>
               <ul>
                 <li>
-                  27-inch WQHD (2560×1440) 1500R gaming monitor with ultrafast 165Hz refresh rate designed for professional gamers and immersive gameplay
+                  27-inch WQHD (2560&cross;1440) 1500R gaming monitor with ultrafast 165Hz refresh rate designed for professional gamers and immersive gameplay
                 </li>
                 <li>
                   1ms (MPRT) response time for smooth gameplay, and ASUS Extreme Low Motion Blur (ELMB ™) technology to further reduce ghosting and motion blur
@@ -364,37 +350,62 @@
     <footer>
       <div class="mycl-footer-left">
         <h1>Navigation</h1>
-        <a href="../index.html"><h1>Home</h1></a>
-        <a href="../products-pages/gpu-products-page.html"><h1>Catalog</h1></a>
-        <a href="./cart.html"><h1>Cart</h1></a>
-        <a href="../contact.html"><h1>Contact</h1></a>
+        <a href="/index.html"><h1>Home</h1></a>
+        <a href="/products-pages/gpu-products-page.html"><h1>Catalog</h1></a>
+        <a href="/cart.html"><h1>Cart</h1></a>
+        <a href="/contact.html"><h1>Contact</h1></a>
       </div>
       <div class="mycl-footer-cneter">
-        <a href="../products-pages/gpu-products-page.html"
+        <a href="/products-pages/gpu-products-page.html"
           ><h1>Graphics Cards</h1></a
         >
-        <a href="../products-pages/monitors-products-page.html"
+        <a href="/products-pages/monitors-products-page.html"
           ><h1>Gaming Monitors</h1></a
         >
-        <a href="../products-pages/keyboards-products-page.html"
+        <a href="/products-pages/keyboards-products-page.html"
           ><h1>Keyboards</h1></a
         >
-        <a href="../products-pages/ram-products-page.html"><h1>Rgb Ram</h1></a>
+        <a href="/products-pages/ram-products-page.html"><h1>Rgb Ram</h1></a>
         <a href="../products-pages/cpu-cases-products-page.html"
           ><h1>Cpu Rgb Cases</h1></a
         >
       </div>
       <div class="mycl-footer-social-icons">
         <a href="https:/www.github.com/jalal1122" target="_blank">
-          <img src="../Images/github-icon3.png" alt="" />
+          <img src="/Images/github-icon3.png" alt="" />
         </a>
         <a href="https:/www.linkedin.com/in/mjdevstudio" target="_blank">
-          <img src="../Images/linkedin-icon2.png" alt="" />
+          <img src="/Images/linkedin-icon2.png" alt="" />
         </a>
       </div>
       <div class="mycl-footer-bottom">
         <div>Rig Realm &copy; 2024</div>
       </div>
     </footer>
+    <div class="mycl-top-banner">
+      <div class="mycl-banner-left">
+        <a href="mailto:jk4350649@gmail.com">
+          <span>rigrealm@edu.com</span>
+        </a>
+        <span
+          >Peshawar, Khyber Pakhtunkhwa, Agriculture University Peshawar</span
+        >
+      </div>
+      <div class="mycl-banner-right">
+        <a href="https://www.github.com/jalal1122/">
+          <img src="/Images/github-icon3.png" alt="" />
+        </a>
+        <a href="https://www.linkedin.com/in/mjdevstudio">
+          <img src="/Images/linkedin-icon2.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("preloader").style.display = "none";
+        }, 2000); // Adjust the time (in milliseconds) for a longer delay
+      });
+    </script>
   </body>
 </html>
