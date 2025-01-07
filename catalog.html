@@ -29,25 +29,10 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
     <header>
-      <div class="mycl-top-banner">
-        <div class="mycl-banner-left">
-          <a href="mailto:jk4350649@gmail.com">
-            <span>rigrealm@edu.com</span>
-          </a>
-          <span
-            >Peshawar, Khyber Pakhtunkhwa, Agriculture University Peshawar</span
-          >
-        </div>
-        <div class="mycl-banner-right">
-          <a href="https://www.github.com/jalal1122/">
-            <img src="./Images/github-icon3.png" alt="" />
-          </a>
-          <a href="https://www.linkedin.com/in/mjdevstudio">
-            <img src="./Images/linkedin-icon2.png" alt="" />
-          </a>
-        </div>
-      </div>
       <nav>
         <div class="mycl-nav-logo-div">
           <a href="#index.html">
@@ -254,7 +239,7 @@
             />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./products-pages/gpu-products-page.html">
+              <a href="/products-pages/gpu-products-page.html">
                 <h2>Graphics Card Collections</h2>
               </a>
             </div>
@@ -263,7 +248,7 @@
             <img src="./Images/Cases/pc-case1.png" alt="" />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./products-pages/cpu-cases-products-page.html">
+              <a href="/products-pages/cpu-cases-products-page.html">
                 <h2>CPU Cases Collections</h2>
               </a>
             </div>
@@ -275,16 +260,17 @@
             />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./products-pages/ram-products-page.html">
+              <a href="/products-pages/ram-products-page.html">
                 <h2>RGB Ram Collections</h2>
               </a>
             </div>
           </div>
           <div class="mycl-catalog-flex-item">
+          main
             <img src="./Images/monitors/monitor-d-10.png" alt="" />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./gaming-monitor-product.html">
+              <a href="/products-pages/monitors-products-page.html">
                 <h2>Gaming Monitor Collections</h2>
               </a>
             </div>
@@ -296,7 +282,7 @@
             />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./products-pages/keyboards-products-page.html">
+              <a href="/products-pages/keyboards-products-page.html">
                 <h2>Keyboard Collections</h2>
               </a>
             </div>
@@ -308,7 +294,7 @@
             />
             <div class="mycl-tint"></div>
             <div class="mycl-h2-div">
-              <a href="./products-pages/headphones-products-page.html">
+              <a href="/products-pages/headphones-products-page.html">
                 <h2>Headphones Collections</h2>
               </a>
             </div>
@@ -343,5 +329,24 @@
         <div>Rig Realm &copy; 2024</div>
       </div>
     </footer>
+    <div class="mycl-top-banner">
+      <div class="mycl-banner-left">
+        <span>rigrealm@edu.com</span>
+        <span
+          >Peshawar, Khyber Pakhtunkhwa, Agriculture University Peshawar</span
+        >
+      </div>
+      <div class="mycl-banner-right">
+        <img src="./Images/github-icon3.png" alt="" />
+        <img src="./Images/linkedin-icon2.png" alt="" />
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("preloader").style.display = "none";
+        }, 2000); // Adjust the time (in milliseconds) for a longer delay
+      });
+    </script>
   </body>
 </html>
